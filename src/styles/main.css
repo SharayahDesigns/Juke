@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+    --theme-main: #1c76c0;
+    --theme-hover: #249CFE;
+    --theme-secondary: #ffa500;
+
+    --page-bg-one: #fe7630;
+    --page-bg-two: #ffc711;
+    --tabs-bg-one: rgba(255, 164, 59, 57%);
+    --tabs-bg-two: rgb(255, 251, 148, 67%);
+    --reference: rgb(133, 0, 167);
+    --reference-hover: rgb(103, 0, 129);
+    --white: #ffffff;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(315deg, rgb(22, 1, 20) 3%, rgba(60, 132, 206, 1) 38%, rgb(3, 172, 239) 68%, rgb(5, 0, 0) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+  /* background: linear-gradient(315deg, rgb(22, 1, 20) 3%, rgba(60,132,206,1) 38%, rgb(3, 172, 239) 68%, rgb(5, 0, 0) 98%); */
+  /* font-family: "Special Gothic Expanded One", sans-serif; */
+  font-family: monospace;
+  color:white;
+}
+.social-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      to bottom right,
+      var(--page-bg-one),
+      var(--page-bg-two)
+    );
+    width: 100vw;
+    height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.juke-title-box {
+  display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      flex-direction: column;
+      text-align: center;
+}
+.juke-title-box h1 {
+  margin:0;
+  padding: 0;
+}
+.mb-1 {
+  margin-bottom: .5rem;
+}
+
+.juke-title {
+  font-size: 38px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.juke-social {
+  font-family: "Dancing Script", cursive;
+  font-size: 38px;
+  font-weight: 400;
+  color: var(--theme-main);
+}
+
+.createRoom-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(315deg, rgb(22, 1, 20) 3%, rgba(60,132,206,1) 38%, rgb(3, 172, 239) 68%, rgb(5, 0, 0) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+
+.signInCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+   border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+}
+
+.signInCard input,
+.signInCard select,
+.signInCard button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+}
+
+.signInCard button {
+  background-color: rgb(36, 156, 254);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signInCard button:hover {
+  /* background-color: rgb(30, 130, 215); */
+  background-color: var(--theme-hover);
+}
+.StartPartyBtn {
+    background-color: var(--theme-main);
+}
+
+/* HOST  */
+.host-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    background: #0000005c;
+    line-height: 1.2;
+    
+}
+.host-header h1 {
+    margin: 0;
+}
+.pt-2 {
+  padding-top:2rem;
+}
+.juke-social-host {
+    font-family: "Dancing Script", cursive;
+    color: orange;
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: 0 0 #545454;
+    line-height: .2;
+}
+.shareParty-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:1rem;
+}
+.shareParty-box p {
+  color:white;
+}
+.shareParty-box h4 {
+    margin:0;
+}
+.shareParty-box button {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+    border-radius: 50%;
+    border-color: transparent;
+}
+.facebook-icon {
+    color:#385898;
+}
+.mail-icon {
+    color: rgb(3, 172, 239);
+}
+.text-icon {
+    color:#04c004;
+}
+.copy-icon {
+    color:gray
+}
+.Party-room-main {
+    font-family: monospace!important;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:1rem;
+    color:white;
+}
+.Party-room-main p {
+    text-align: center;
+}
+.Party-room-main ul {
+    margin: 0;
+    /* padding: 0; */
+}
+.Play-Controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.Play-Controls button {
+background-color: transparent;
+font-size: 36px;
+color:white;
+border: none;
+}
+.PlayControls button:focus .play-icon,
+.PlayControls button:active .play-icon {
+  color: var(--theme-secondary);
+}
+.play-icon.playing {
+    color: orange;
+  }
+  .play-icon.highlight {
+    color: orange;
+  }
+.current-video-block {
+    display: flex;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+}
+.current-video-thumbnail {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 8px;
+    /* margin-bottom: 1rem; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  .goToYoutube {
+    font-family: monospace;
+    color:pink;
+    text-decoration: none;
+  }
+  .currentVid {
+    /* border: 1px solid; */
+    width: fit-content;
+    /* padding: .4rem;
+    border-radius: 3px;
+    background: white;
+    color: #249cfe; */
+    font-family: monospace;
+  }
+  .theQue {
+    /* border: 1px solid; */
+    width: fit-content;
+    /* padding: .4rem;
+    border-radius: 3px;
+    background: white;
+    color: var(--theme-secondary); */
+    font-family: monospace;
+  }
+  .upNext-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px 0px; */
+    /* gap: 10px; */
+    padding:.8rem;
+    max-height: 200px;
+    overflow: auto;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    padding: 1rem;
+
+  }
+  .upNext-list li {
+    background-color: white;
+    padding: .5rem;
+    border-radius: 4px;
+    color:black
+    
+  }
+  .tv-preview-mini iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .miniPlayer {
+    margin-top:1rem;
+  }
+  .roomCode {
+    font-size: 14px;
+    border: 1px solid;
+    padding: .4rem;
+    border-radius: 3px;
+    background-color: white;
+  }
+  .guest-signIn-main {
+    padding:1rem;
+  }
+
+  .signInCard h2{
+    text-align: center;
+    margin:0;
+  }
+  .guest-signIn-main .guest-header {
+    display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+  }
+.guest-header h1 {
+    padding: 0;
+    margin: 0;
+}
+.joinRoom-main {
+    padding:2rem;
+}
+.manualJoin {
+    margin-bottom:1rem;
+    text-align: center;
+    color:white;
+}
+.youtube-card {
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+}
+.youtubeInfo p {
+    color: white;
+}
+.channelProfile {
+    display: flex;
+    align-items: center;
+    margin-bottom: .8rem;
+    margin-top:1rem;
+}
+.signInbutton {
+  font-family: monospace;
+    text-decoration: none;
+    color: rgb(22, 1, 20);
+    text-align: center;
+}
+.signin-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:1rem;
+}
+.signIn-Form {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.signIn-Form button {
+margin-top:1rem;
+font-weight: 400;
+}
+.googleBtn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  font-weight:400;
+  cursor: pointer;
+  font-size: 16px;
+  color:black;
+}
+.createAccount {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 14px;
+  cursor:pointer;
+  font-family: monospace;
+  color:white;
+}
+.showPasswordBtn {
+  background-color: transparent!important;
+  color: gray !important;;
+  margin-top:0!important;
+
+}
+.profilePic {
+  margin-left:auto;
+}
+.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.css-1ygil4i-MuiToolbar-root {
+  justify-content: space-between;
+}
+.createPartyHead {
+  font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: orange;
+    text-align: center;
+}
+ul.MuiList-root.MuiList-padding.MuiMenu-list.css-1toxriw-MuiList-root-MuiMenu-list {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.RedError {
+  font-family: monospace;
+  font-size: 14px;
+  text-align: center;
+  margin:0;
+}
+
+/* ---------SWALL---------  */
+/* styles/globals.css or App.css */
+.my-swal-popup {
+  max-width: 320px !important;
+  padding: 1.5rem !important;
+  border-radius: 12px !important;
+  font-family: 'Arial', sans-serif;
+}
+
+.my-swal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.my-swal-content {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.my-swal-confirm {
+  background-color: var(--theme-main)!important;
+  color: white !important;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 4px !important;
+  border:none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.my-swal-cancel {
+  background-color: #e0e0e0 !important;
+  color: #333 !important;
+  margin-right: 0.5rem;
+}
+/* --------  */
+
+.juke-create {
+  font-family: "Dancing Script", cursive;
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--theme-secondary);
+}
+.topCodeSettings {
+  display: flex;
+}
+.chooseJuke {
+  display: flex;
+  gap:3rem;
+  flex-direction: column;
+}
+.hostorjoin {
+  width: 260px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding:1rem 2rem;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  
+}
+.StartPartyBtn {
+    color:white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+
+}
+.joinicon {
+  width:50px;
+  height:50px;
+}
+.juke-title-choose {
+  font-size: 38px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    color: black;
+}
+.juke-create-choose {
+  font-family: "Dancing Script", cursive;
+  font-size: 38px;
+  font-weight: 400;
+  color: var(--theme-secondary);
+  line-height: 1;
+}
+.juke-title-room{
+  font-size: 28px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+.gotoTV {
+  display: flex;
+  justify-content: center;
+}
+.gottoTV img:active {
+  filter: sepia(1)
+}
+.Guest-SignIN {
+  display: flex;
+  justify-content: center;
+}
